@@ -1,0 +1,23 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: debian-7.8
+
+suites:
+  - name: default
+    run_list:
+      - recipe[debian]
+      - recipe[apt]
+      - recipe[the_silver_searcher]
+      - recipe[yewton-emacs]
+    attributes:
+      the_silver_searcher:
+        version: 0.29.0
+        checksum: a274ee3aa2294ad77f856be666bc3d8dcc59a98b974a2039c53846f89c21cd22
+      debian:
+        deb_src: true

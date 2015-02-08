@@ -1,0 +1,16 @@
+.rake_test_cache
+
+.kitchen/
+
+bin/
+cookbooks/
+nodes/
+clients/
+vendor/bundle
+
+###
+# Ignore Chef key files and secrets
+###
+.chef/*.pem
+.chef/encrypted_data_bag_secret
+.chef/local-mode-cache

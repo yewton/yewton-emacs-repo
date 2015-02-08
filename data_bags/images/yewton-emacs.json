@@ -1,0 +1,13 @@
+{
+  "id": "yewton-emacs",
+  "machine_options": {
+    "docker_options": {
+      "base_image": {
+        "name": "chef_yewton-emacs",
+        "repository": "chef",
+        "tag": "yewton-emacs"
+      },
+      "from_image": true
+    }
+  }
+}
